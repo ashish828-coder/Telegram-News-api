@@ -4,9 +4,9 @@ import os
 import requests
 
 # ---- CONFIG -----
-NEWS_API_KEY = ""
-TELEGRAM_BOT_TOKEN = ""
-TELEGRAM_CHAT_ID = ""
+NEWS_API_KEY = os.environ.get("NEWS_API_KEY")
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 COUNTRY = os.environ.get("COUNTRY", "us")           # 'in' = India
 CATEGORY = os.environ.get("CATEGORY", "general")    # business, tech, sports, etc.
